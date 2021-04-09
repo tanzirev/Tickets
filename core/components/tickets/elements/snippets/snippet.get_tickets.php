@@ -117,8 +117,7 @@ $rows = $pdoFetch->run();
 if (!empty($returnIds)) {
     return $rows;
 }
-ini_set('error_reporting', -1);
-ini_set('display_errors', 1);
+
 // Processing rows
 $output = array();
 if (!empty($rows) && is_array($rows)) {
